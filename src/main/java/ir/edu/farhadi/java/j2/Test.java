@@ -7,6 +7,12 @@ package ir.edu.farhadi.java.j2;
  */
 public class Test {
 
+
+    public static void main(String[] args) {
+        step1();
+        step2();
+        step3();
+    }
     /**
      * in this method i tried show how can we compering reference and value object
      */
@@ -59,6 +65,26 @@ public class Test {
         String s6 = new String("Java").intern();
         if (s5 == s6)
             System.out.println("as you can see these objects are equal ");
-
     }
+    // String and All Wrapper Class are immutable
+    public static void step4(){
+        String s1 = new String("Mos");
+        prs(s1);
+        // as you can see just print Mos . No Mostafa because String type is immutable
+        System.out.println(s1);
+    }
+    public static void prs(String s1) {
+        s1.concat("tafa");
+    }
+    // another example is immutable test for Integer type
+    public static void step5(){
+        Integer x=10;
+        testImmutable(x);
+        System.out.println(x);
+    }
+
+    private static void testImmutable(Integer x) {
+        x = 20;
+    }
+
 }
