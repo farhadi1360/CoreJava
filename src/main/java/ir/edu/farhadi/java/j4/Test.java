@@ -12,7 +12,7 @@ package ir.edu.farhadi.java.j4;
 
 public class Test {
 
-    /**
+    /*
      * as you can see we can not use static in LocalVariable
      * because we know all of the method in java has stack frame so the lifecycle of that  LocalVariable
      * is limited to end of method so that lead to static LocalVariable can not keep the value after end of method

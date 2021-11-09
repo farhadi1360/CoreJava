@@ -12,7 +12,7 @@ public class SampleStaticMethods {
 
     }
 
-    /**
+    /*
      * we can not use this keywords on all static methods. but we recommend you
      * if you want to use static method you can use in this way
      * classname.nameOfStaticMethod()
@@ -25,12 +25,12 @@ public class SampleStaticMethods {
 
 
     public static void test() {
-        /**
+        /*
          * in static method you can not access to non static fields or methods
          */
 //        this.abc=20;
 //        nonStaticMethod();
-/**
+/*
  * i just use only this way for access to nonstatic methods i means creation object
  */
 

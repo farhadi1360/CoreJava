@@ -6,7 +6,7 @@ package ir.edu.farhadi.java.j3;
  * @author Mostafa.Farhadi c@2021
  */
 
-/**
+/*
  * in this class i tried showed you how can i use builder pattern as MessageBuilder
  */
 public class MessageBuilder {
@@ -24,14 +24,14 @@ public class MessageBuilder {
         return this;
     }
 
-    /**
+    /*
      * this is finally process method for get result
      */
     public void build(){
         System.out.println(message.toString());
     }
 
-    /**
+    /*
      * Builder pattern
      */
     public static void sampleForBuilderPattern() {

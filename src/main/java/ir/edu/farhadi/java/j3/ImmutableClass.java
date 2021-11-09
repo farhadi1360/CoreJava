@@ -6,11 +6,12 @@ package ir.edu.farhadi.java.j3;
  * @author Mostafa.Farhadi c@2021
  */
 
-/**
+/*
  * as you know this design of class is basic design for all of the ImmutableClass
- * such as Integer , Long , ...
+ * such as Integer , Long , ....
  */
 public class ImmutableClass {
+
     // i defined final field for no changes
     private final int a;
 
@@ -28,7 +29,7 @@ public class ImmutableClass {
         sampleForImmutableClass();
     }
 
-    /**
+    /*
      * sample for ImmutableClass
      */
     public static void sampleForImmutableClass() {
