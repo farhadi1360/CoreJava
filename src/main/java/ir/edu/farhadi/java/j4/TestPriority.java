@@ -6,4 +6,9 @@ package ir.edu.farhadi.java.j4;
  * @author Mostafa.Farhadi c@2021
  */
 public class TestPriority {
+
+    public static void main(String[] args) {
+        PriorityExecutiveInJava priority = new PriorityExecutiveInJava();
+        priority.testNonStaticMethod();
+    }
 }
