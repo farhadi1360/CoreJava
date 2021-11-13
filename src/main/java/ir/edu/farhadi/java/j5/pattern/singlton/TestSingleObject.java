@@ -1,4 +1,4 @@
-package ir.edu.farhadi.java.j5;
+package ir.edu.farhadi.java.j5.pattern.singlton;
 
 /**
  * these are a lot of samples for learning core java
@@ -9,7 +9,7 @@ package ir.edu.farhadi.java.j5;
  */
 public class TestSingleObject {
     public static void main(String[] args) {
-        FileLogger obj1 = FileLogger.getFileLogger();
+       FileLogger obj1 = FileLogger.getFileLogger();
         FileLogger obj2 = FileLogger.getFileLogger();
         FileLogger obj3 = FileLogger.getFileLogger();
         if (obj1==obj2 && obj3==obj1){

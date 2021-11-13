@@ -1,4 +1,4 @@
-package ir.edu.farhadi.java.j5;
+package ir.edu.farhadi.java.j5.pattern.singlton;
 
 /**
  * these are a lot of samples for learning core java
