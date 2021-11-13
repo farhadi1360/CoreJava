@@ -6,19 +6,22 @@ package ir.edu.farhadi.java.j5;
  * @author Mostafa.Farhadi c@2021
  * i am going to descibed a bout how can i get only one object per instans
  */
-public final class SingleObject {
+public final class FileLogger {
     /*
       i create a constructor as a private constructor so all of the developers can not use default constructor
      */
-    private SingleObject() {
+    private FileLogger() {
     }
 
-    private static SingleObject onlyOneObject = null;
+    private static FileLogger logger = null;
 
-    public synchronized static SingleObject getOnlyOneObject() {
-        if (onlyOneObject == null) {
-            onlyOneObject = new SingleObject();
+    public  static FileLogger getFileLogger() {
+        if (logger == null) {
+            logger = new FileLogger();
         }
-        return onlyOneObject;
+        return logger;
+    }
+    public synchronized void log(String msg){
+        System.out.println("Logger : " .concat(msg));
     }
 }
