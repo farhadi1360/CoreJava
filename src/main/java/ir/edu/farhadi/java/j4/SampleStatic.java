@@ -5,7 +5,7 @@ package ir.edu.farhadi.java.j4;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public class SampleStatic {
+public  class SampleStatic {
     static int a ;
 
     /*

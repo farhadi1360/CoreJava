@@ -12,7 +12,7 @@ public class PriorityExecutiveInJava {
     final static int fs;
 
     {
-        System.out.println("Run Init Block Per Object Creation");
+        System.out.println("Run 1 Init Block Per Object Creation");
     }
 
     static {
@@ -26,7 +26,7 @@ public class PriorityExecutiveInJava {
     }
 
     {
-        System.out.println("Run Init Block Per Object Creation");
+        System.out.println("Run 2 Init Block Per Object Creation");
     }
 
     void testNonStaticMethod() {

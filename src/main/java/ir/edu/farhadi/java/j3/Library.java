@@ -5,11 +5,11 @@ package ir.edu.farhadi.java.j3;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public class Test {
-    private int code;
-    private Book book;
+public class Library {
+    private final int code;
+    private final Book book;
 
-    public Test(int code, Book book) {
+    public Library(int code, Book book) {
         this.code = code;
         this.book = book;
     }

@@ -14,6 +14,7 @@ public class SampleFinalAndStatic {
 
     private final static String IP = getIP();
 
+
     static {
         SYSTEM_CODE = 100;
     }

@@ -37,4 +37,10 @@ public class SampleStaticMethods {
 //        SampleStaticMethods sampleStaticMethods = new SampleStaticMethods();
 //        sampleStaticMethods.nonStaticMethod();
     }
+
+    public static void main(String[] args) {
+        SampleStaticMethods sampleStaticMethods = new SampleStaticMethods();
+        sampleStaticMethods.nonStaticMethod();
+        SampleStaticMethods.test();
+    }
 }

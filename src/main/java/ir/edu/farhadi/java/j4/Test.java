@@ -6,7 +6,7 @@ package ir.edu.farhadi.java.j4;
  * @author Mostafa.Farhadi c@2021
  *
  * in this class i want show som sample of static concept
- * we can not use static in keyword on Class,Interface,Constructor and LocalVariable
+ * we can not use static  keyword on Class,Interface,Constructor and LocalVariable
  * and we just able to use that on method and type of variable
  */
 
@@ -17,9 +17,9 @@ public class Test {
      * because we know all of the method in java has stack frame so the lifecycle of that  LocalVariable
      * is limited to end of method so that lead to static LocalVariable can not keep the value after end of method
      */
-    private  void method1() {
-    // static int a;
-    }
+//    private  void method1() {
+//     static int a;
+//    }
 
     /*
         as you know all of the methods that needs to heap space which called instance methods

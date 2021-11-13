@@ -9,6 +9,10 @@ public class TestPriority {
 
     public static void main(String[] args) {
         PriorityExecutiveInJava priority = new PriorityExecutiveInJava();
+        PriorityExecutiveInJava priority2 = new PriorityExecutiveInJava();
+        PriorityExecutiveInJava priority3 = new PriorityExecutiveInJava();
+        PriorityExecutiveInJava priority4 = new PriorityExecutiveInJava();
+        PriorityExecutiveInJava priority5 = new PriorityExecutiveInJava();
         priority.testNonStaticMethod();
     }
 }
