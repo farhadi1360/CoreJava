@@ -7,6 +7,9 @@ package ir.edu.farhadi.java.j5.pattern.singlton;
  * i am going to descibed a bout how can i get only one object per instans
  */
 public final class FileLogger {
+
+
+
     /*
       i create a constructor as a private constructor so all of the developers can not use default constructor
      */
@@ -16,12 +19,15 @@ public final class FileLogger {
     private static FileLogger logger = null;
 
     public  static FileLogger getFileLogger() {
+
         if (logger == null) {
             logger = new FileLogger();
         }
         return logger;
     }
-    public synchronized void log(String msg){
+
+
+    public  void log(String msg){
         System.out.println("Logger : " .concat(msg));
     }
 }

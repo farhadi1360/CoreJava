@@ -1,17 +1,24 @@
-package ir.edu.farhadi.java.j5;
+package ir.edu.farhadi.java.j6;
 
 /**
  * these are a lot of samples for learning core java
  *
  * @author Mostafa.Farhadi c@2021
  */
-public class Student implements Cloneable{
+public class Human {
     private String name;
     private String family;
 
-    public Student(String name, String family) {
+    public Human(){
+        System.out.println("Constructor Of Human was called");
+    }
+    public Human(String name, String family) {
         this.name = name;
         this.family = family;
+        System.out.println("Constructor Of Human was called with these parameters  ".concat(name).concat("  ").concat(family));
+    }
+    public void save(){
+        System.out.println("Save Method is master method that put in superclass");
     }
 
     public String getName() {
@@ -24,11 +31,6 @@ public class Student implements Cloneable{
 
     public String getFamily() {
         return family;
-    }
-
-    public Object clone() throws CloneNotSupportedException
-    {
-        return super.clone();
     }
 
     public void setFamily(String family) {

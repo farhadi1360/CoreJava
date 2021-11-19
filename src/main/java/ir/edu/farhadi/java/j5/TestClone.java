@@ -12,7 +12,7 @@ public class TestClone {
      */
     public static void main(String[] args) throws CloneNotSupportedException {
         Student student1 = new Student("Mostafa", "Farhadi");
-        Student student2=(Student)  student1.clone();
+        Student student2=(Student) student1.clone();
         if (student1==student2){
             System.out.println("both references are equals ");
         }else{
