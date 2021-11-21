@@ -10,8 +10,9 @@ public class SubClass extends SuperClass {
 
 
     public static void main(String[] args) {
-        SubClass subClass = new SubClass();
-        subClass.defaultCalculate();
+        SuperClass subClass = new SubClass();
+//        subClass.defaultCalculate();
+        subClass.log();
     }
 
     /**
@@ -61,9 +62,17 @@ public class SubClass extends SuperClass {
     /**
      * we can not never  override a final method in java
      * because that method just defined once by parent
+     * to mack it clear i should say in java we have 3 keywords which if we want to use
+     * them actually we prevent Override Mechanism
+     * 1 - final 2- static 3- private
+     *
      */
 //    protected final void checkSecurity() {
 //        System.out.println("Call checkSecurity Method on SubClass");
 //    }
+
+    public static void log(){
+        System.out.println(" This is log method on SubClass");
+    }
 
 }

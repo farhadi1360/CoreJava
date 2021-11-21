@@ -22,4 +22,7 @@ public class SuperClass {
     protected final void checkSecurity() {
         System.out.println(" This is checkSecurity method on SuperClass");
     }
+    public static void log(){
+        System.out.println(" This is log method on SuperClass");
+    }
 }
