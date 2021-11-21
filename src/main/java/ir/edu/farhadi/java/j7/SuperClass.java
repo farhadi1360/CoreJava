@@ -18,4 +18,8 @@ public class SuperClass {
     protected void doIt(){
         System.out.println(" This is doIt method on SuperClass");
     }
+
+    protected final void checkSecurity() {
+        System.out.println(" This is checkSecurity method on SuperClass");
+    }
 }

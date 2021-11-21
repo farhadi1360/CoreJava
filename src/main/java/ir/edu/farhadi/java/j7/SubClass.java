@@ -58,4 +58,12 @@ public class SubClass extends SuperClass {
         System.out.println("After Call Parent Method");
     }
 
+    /**
+     * we can not never  override a final method in java
+     * because that method just defined once by parent
+     */
+//    protected final void checkSecurity() {
+//        System.out.println("Call checkSecurity Method on SubClass");
+//    }
+
 }
