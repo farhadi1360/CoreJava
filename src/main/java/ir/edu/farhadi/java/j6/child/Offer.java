@@ -9,11 +9,15 @@ import ir.edu.farhadi.java.j6.Boss;
  */
 public class Offer extends Boss {
 
-    public Offer(){
+    /**
+     * in this sample i am going to show how subclass can access to protected filed like "salary"
+     * in hierarchy inheriting
+     */
+    public Offer() {
         System.out.println("Constructor Of Offer was called   ");
     }
 
-    public void calculate(){
+    public void calculate() {
 
         System.out.println("calculate Of Offer was called   ");
     }

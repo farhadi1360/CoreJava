@@ -8,6 +8,7 @@ package ir.edu.farhadi.java.j6.sample;
 public class Test {
     public static void main(String[] args) {
         Diskette diskette = new DentalDiskette("Dental");
+//        Diskette diskette = new LaboratoryDiskette("LaboratoryDiskette");
         printPrice(diskette);
     }
 
