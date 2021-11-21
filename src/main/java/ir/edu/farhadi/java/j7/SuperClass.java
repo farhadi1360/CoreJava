@@ -10,4 +10,12 @@ public class SuperClass {
     protected void defaultCalculate() {
         System.out.println(" This is defaultCalculate on SuperClass");
     }
+
+    public Number getSum(int a , int b) {
+        return a + b;
+    }
+
+    protected void doIt(){
+        System.out.println(" This is doIt method on SuperClass");
+    }
 }

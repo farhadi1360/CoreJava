@@ -8,6 +8,12 @@ package ir.edu.farhadi.java.j7;
  */
 public class SubClass extends SuperClass {
 
+
+
+    public static void main(String[] args) {
+        SubClass subClass = new SubClass();
+        subClass.defaultCalculate();
+    }
     /**
      * we can not change level of access modifier
      * i means if we have protected or public access modifier for method we have to
@@ -18,8 +24,24 @@ public class SubClass extends SuperClass {
         System.out.println(" This is defaultCalculate on SubClass");
     }
 
-    public static void main(String[] args) {
-        SubClass subClass = new SubClass();
-        subClass.defaultCalculate();
+    /**
+     * after java 5 we can change type of return type in overriding
+     * @param a
+     * @param b
+     * @return the child of parent type
+     */
+
+    public Double getSum(int a , int b) {
+        return null;
     }
+
+    /**
+     * after java5 we can use a @Override for Overriding
+     * @Override is optional
+     */
+     @Override
+    protected void doIt(){
+        System.out.println(" This is doIt method on SubClass");
+    }
+
 }
