@@ -10,6 +10,8 @@ import ir.edu.farhadi.java.j6.sample.services.DisketteService;
  * these are a lot of samples for learning core java
  *
  * @author Mostafa.Farhadi c@2021
+ * i want to describe Dynamic Binding on (Run time)
+ *  *                 and Static Binding on (Compile-time)
  */
 public class Test {
     public static void main(String[] args) {
