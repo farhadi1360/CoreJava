@@ -5,7 +5,7 @@ package ir.edu.farhadi.java.j8.compostion;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public final class TCPConnector {
+public  class TCPConnector {
     private String url;
 
     public String getUrl() {
