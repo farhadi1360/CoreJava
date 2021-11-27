@@ -32,4 +32,11 @@ public class ServiceBus {
         tcpConnector.doConnect();
     }
 
+    public void getFullConnection() {
+        databaseConnector.doConnect();
+        ftpConnector.doConnect();
+        httpConnector.doConnect();
+        tcpConnector.doConnect();
+    }
+
 }

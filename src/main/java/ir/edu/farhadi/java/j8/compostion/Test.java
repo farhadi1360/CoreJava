@@ -12,5 +12,7 @@ public class Test {
         serviceBus.getFTPConnector();
         serviceBus.getHttpConnector();
         serviceBus.getTCPConnector();
+      /**************Composite State *****************/
+      //  serviceBus.getFullConnection();
     }
 }
