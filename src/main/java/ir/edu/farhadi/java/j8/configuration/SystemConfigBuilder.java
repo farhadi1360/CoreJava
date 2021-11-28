@@ -1,4 +1,4 @@
-package ir.edu.farhadi.java.j8;
+package ir.edu.farhadi.java.j8.configuration;
 
 /**
  * these are a lot of samples for learning core java
@@ -40,9 +40,9 @@ public final class SystemConfigBuilder {
         return this;
     }
 
-    public SystemConfigBuilder build() {
-        return this;
-    }
+//    public SystemConfigBuilder build() {
+//        return this;
+//    }
 
     @Override
     public String toString() {

@@ -6,6 +6,7 @@ package ir.edu.farhadi.java.j6.sample.models;
  * @author Mostafa.Farhadi c@2021
  */
 public final class DentalSurgery extends DentalDiskette {
+
     public DentalSurgery(String name, long price) {
         super(name, price);
     }

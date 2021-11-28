@@ -8,12 +8,13 @@ package ir.edu.farhadi.java.j6;
 public class Test {
     public static void main(String[] args) {
 
-        step1();
-        step2();
+//        step1();
+      //  step2();
     }
 
     private static void step1() {
-        Boss boss = new Boss(1000);
+        Boss boss = new Boss();
+        boss.setSalary(1000);
         boss.setPersonnelCode("1000");
         boss.setName("Mostafa");
         boss.setFamily("Farhadi");
@@ -41,10 +42,13 @@ public class Test {
           */
         personnel.checkPersonnelCode();
         personnel.save();
+
          /*
            we can create human view
           */
         human.save();
+
+
     }
 
     /**
@@ -52,6 +56,7 @@ public class Test {
      */
     private static void step3() {
         Boss boss = new Boss();
+
         /*
           i can access to static method by reference
          */

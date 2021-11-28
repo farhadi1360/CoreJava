@@ -20,11 +20,15 @@ public class Overloading {
 
     public static void main(String[] args) {
         Overloading overloading = new Overloading();
-        overloading.calculateSalary(5, 5);
+        overloading.calculateSalary(5);
     }
 
     int calculateSalary(int x, int y) {
         System.out.println("Executed calculateSalary by considering  primitives type i mean int ");
+        return x;
+    }
+    long calculateSalary(long x, long y) {
+        System.out.println("Executed calculateSalary by considering  primitives type i mean long ");
         return x;
     }
 
@@ -33,10 +37,7 @@ public class Overloading {
         return x;
     }
 
-    long calculateSalary(long x, long y) {
-        System.out.println("Executed calculateSalary by considering  primitives type i mean long ");
-        return x;
-    }
+
 
     Long calculateSalary(Long a, Long b) {
         System.out.println("Executed calculateSalary by considering  reference type i mean Long Object ");

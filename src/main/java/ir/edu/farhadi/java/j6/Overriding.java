@@ -19,7 +19,7 @@ public class Overriding extends Boss{
      * like public
      * also as yoc can  see  implement of the method can changing by new implement which we say overriding
      */
-    public void doSomeThings(){
+    protected void doSomeThings(){
         System.out.println("Overriding doSomeThings");
     }
 }

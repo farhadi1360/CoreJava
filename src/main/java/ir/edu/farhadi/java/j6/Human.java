@@ -17,9 +17,7 @@ public class Human {
         this.family = family;
         System.out.println("Constructor Of Human was called with these parameters  ".concat(name).concat("  ").concat(family));
     }
-    public void save(){
-        System.out.println("Save Method is master method that put in superclass");
-    }
+
 
     public String getName() {
         return name;
@@ -35,5 +33,10 @@ public class Human {
 
     public void setFamily(String family) {
         this.family = family;
+    }
+
+
+    public void save(){
+        System.out.println("Save Method is master method that put in superclass");
     }
 }

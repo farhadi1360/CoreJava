@@ -9,6 +9,7 @@ public class Diskette {
     private String name;
     private long price;
 
+
     public Diskette(String name, long price) {
         this.name = name;
         this.price = price;
@@ -37,4 +38,5 @@ public class Diskette {
                 ", price=" + price +
                 '}';
     }
+
 }

@@ -10,9 +10,10 @@ public class SubClass extends SuperClass {
 
 
     public static void main(String[] args) {
-        SuperClass subClass = new SubClass();
+        SubClass value = new SubClass();
 //        subClass.defaultCalculate();
-        subClass.log();
+        value.staticLog();
+//        value.testForAccessToParentMethod();
     }
 
     /**
@@ -71,8 +72,11 @@ public class SubClass extends SuperClass {
 //        System.out.println("Call checkSecurity Method on SubClass");
 //    }
 
-    public static void log(){
+    public static void staticLog(){
         System.out.println(" This is log method on SubClass");
+    }
+    public  void nonStaticLog(){
+        System.out.println(" This is log2 method on SubClass");
     }
 
 }

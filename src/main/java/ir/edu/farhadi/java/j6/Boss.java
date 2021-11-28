@@ -17,7 +17,14 @@ public class Boss extends Personnel {
         super("007");
         this.salary = salary;
         System.out.println("Constructor Of Boss was called with these parameters  "+salary);
+    }
 
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
     public int getRange() {
@@ -28,7 +35,10 @@ public class Boss extends Personnel {
         this.range = range;
     }
 
-    void doSomeThings() {
+    protected void doSomeThings() {
         System.out.println("Call doSomeThings");
     }
+
+
+
 }
