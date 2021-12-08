@@ -6,8 +6,11 @@ package ir.edu.farhadi.java.j8.abstraction.methods;
  * @author Mostafa.Farhadi c@2021
  */
 public class Oracle extends AbstractDatabase{
+
+
     @Override
     public void getConnection() {
         System.out.println("Get Connection from Oracle Database");
     }
+
 }

@@ -40,12 +40,7 @@ public final class SystemConfigBuilder {
         return this;
     }
 
-//    public SystemConfigBuilder build() {
-//        return this;
-//    }
-
-    @Override
-    public String toString() {
+    public String build() {
         return "SystemConfigBuilder{" +
                 "ip='" + ip + '\'' +
                 ", port='" + port + '\'' +
@@ -53,4 +48,14 @@ public final class SystemConfigBuilder {
                 ", url='" + url + '\'' +
                 '}';
     }
+
+//    @Override
+//    public String toString() {
+//        return "SystemConfigBuilder{" +
+//                "ip='" + ip + '\'' +
+//                ", port='" + port + '\'' +
+//                ", serviceName='" + serviceName + '\'' +
+//                ", url='" + url + '\'' +
+//                '}';
+//    }
 }

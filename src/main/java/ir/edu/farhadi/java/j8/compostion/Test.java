@@ -13,6 +13,7 @@ public class Test {
         serviceBus.getHttpConnector();
         serviceBus.getTCPConnector();
       /**************Composite State *****************/
-      //  serviceBus.getFullConnection();
+        System.out.println(" /**************Composite State *****************/");
+        serviceBus.getFullConnection();
     }
 }

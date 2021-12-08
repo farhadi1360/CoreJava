@@ -10,6 +10,7 @@ public class Test {
 
 //        step1();
       //  step2();
+        step4();
     }
 
     private static void step1() {
@@ -70,4 +71,17 @@ public class Test {
          */
         Boss.calculateAgeOfPerson();
     }
+
+    private static void step4() {
+        Human human = new Boss();
+        human.setName("Mostafa");
+        testReferenceTypeCasting(human);
+    }
+
+    //**********  Reference Type Casting
+    static void testReferenceTypeCasting(Object obj) {
+        Boss boss = (Boss) obj;
+        System.out.println(boss.getName());
+    }
+
 }

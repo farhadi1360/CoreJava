@@ -8,12 +8,12 @@ package ir.edu.farhadi.java.j8.configuration;
 public class TestSystemConfig {
     public static void main(String[] args) {
         SystemConfigBuilder builder = SystemConfigBuilder.getSystemConfig();
-        SystemConfigBuilder config = builder
+        String config = builder
                 .ip("127.0.0.1")
                 .port("7001")
                 .serviceName("PIS")
-                .url("/api/vi/pis");
-//                .build();
+                .url("/api/vi/pis")
+                .build();
         System.out.println(config);
 
 

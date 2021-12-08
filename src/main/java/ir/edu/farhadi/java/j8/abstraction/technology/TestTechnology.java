@@ -7,11 +7,13 @@ package ir.edu.farhadi.java.j8.abstraction.technology;
  */
 public class TestTechnology {
     public static void main(String[] args) {
-//        Technology technology1 = new Technology();
+//        AbstractTechnology technology1 = new AbstractTechnology();
         AbstractTechnology abstractTechnology = new ITAbstractTechnology();
-       String techName= abstractTechnology.getTechnologyByCode(10);
+        String techName = abstractTechnology.getTechnologyByCode(10);
         System.out.println(techName);
+
         abstractTechnology.testStaticMethod();
+
         AbstractTechnology.testStaticMethod();
 
 
