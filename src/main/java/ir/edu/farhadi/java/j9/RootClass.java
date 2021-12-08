@@ -22,6 +22,9 @@ public class RootClass extends Object {
         Object obj7 = new int [3];
         Object obj8 = new double[5];
         testMethod(obj8);
+
+        StringBuffer sb = new StringBuffer();
+
     }
     /*
          what is polymorphism ?

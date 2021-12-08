@@ -32,6 +32,9 @@ public class Test {
         Boss boss = new Boss();
         Personnel personnel = boss;
         Human human = boss;
+
+        Human bigHuman = new Human();
+        Boss boss1 = (Boss) bigHuman;
          /*
            we can create boss view
           */
@@ -73,15 +76,28 @@ public class Test {
     }
 
     private static void step4() {
-        Human human = new Boss();
+        Boss boss = new Boss();
+        Personnel personnel = boss;
+        Human human = boss;
+
+
+
+
         human.setName("Mostafa");
-        testReferenceTypeCasting(human);
+
+
+        boss.setRange(10);
+        logAllBossRanges(personnel);
     }
 
     //**********  Reference Type Casting
-    static void testReferenceTypeCasting(Object obj) {
+    static void logAllBossRanges(Object obj) {
         Boss boss = (Boss) obj;
-        System.out.println(boss.getName());
+        Personnel personnel = (Personnel) obj;
+        Human human = (Human) obj;
+
+        boss.setRange(10);
+        System.out.println(boss.getRange());
     }
 
 }
