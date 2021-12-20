@@ -1,5 +1,8 @@
 package ir.edu.farhadi.java.j6;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * these are a lot of samples for learning core java
  *
@@ -9,9 +12,11 @@ public class Test {
     public static void main(String[] args) {
 
 //        step1();
-      //  step2();
-        step4();
+        //  step2();
+//        step4();
+        step6();
     }
+
 
     private static void step1() {
         Boss boss = new Boss();
@@ -81,11 +86,7 @@ public class Test {
         Human human = boss;
 
 
-
-
         human.setName("Mostafa");
-
-
         boss.setRange(10);
         logAllBossRanges(personnel);
     }
@@ -99,5 +100,24 @@ public class Test {
         boss.setRange(10);
         System.out.println(boss.getRange());
     }
+
+    private static void step6() {
+        Personnel personnel = new Personnel();
+        personnel.setPersonnelCode("1500");
+        classCastException(personnel);
+//        useInstanceof(personnel);
+    }
+
+    static void classCastException(Object obj) {
+        String personnel = (String) obj;
+        System.out.println(personnel.toString());
+    }
+    static void useInstanceof(Object obj) {
+        if( obj instanceof  Personnel){
+            Personnel personnel = (Personnel) obj;
+            System.out.println(personnel.toString());
+        }
+    }
+
 
 }
