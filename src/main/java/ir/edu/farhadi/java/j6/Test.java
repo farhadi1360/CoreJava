@@ -91,7 +91,7 @@ public class Test {
         logAllBossRanges(personnel);
     }
 
-    //**********  Reference Type Casting
+    //**********  Reference Type Casting  -- > parametric polymorphism
     static void logAllBossRanges(Object obj) {
         Boss boss = (Boss) obj;
         Personnel personnel = (Personnel) obj;
@@ -104,13 +104,14 @@ public class Test {
     private static void step6() {
         Personnel personnel = new Personnel();
         personnel.setPersonnelCode("1500");
-        classCastException(personnel);
-//        useInstanceof(personnel);
+//        classCastException(personnel);
+        useInstanceof(personnel);
     }
 
+    // parametric polymorphism
     static void classCastException(Object obj) {
-        String personnel = (String) obj;
-        System.out.println(personnel.toString());
+        String x = (String) obj;
+        System.out.println(x.toString());
     }
     static void useInstanceof(Object obj) {
         if( obj instanceof  Personnel){

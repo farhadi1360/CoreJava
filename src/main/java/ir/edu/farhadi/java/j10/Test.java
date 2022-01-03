@@ -14,10 +14,12 @@ import java.util.Objects;
  */
 public class Test {
     public static void main(String[] args) {
+
 //        simpleGenericType();
 //        useBoundedType();
 //        testArrayListSteepOne();
-        testArrayListStepTwo();
+//        testArrayListStepTwo();
+        testUseGenericInArrayList();
     }
 
     private static void simpleGenericType() {
@@ -38,7 +40,8 @@ public class Test {
     }
     private static void useBoundedType() {
         GenericBounded<Personnel> genericBounded = new GenericBounded<Personnel>(); // before java 1.7
-        GenericBounded<Personnel> genericBoundedNew = new GenericBounded<>(); // After java 1.7
+
+        GenericBounded<Personnel> genericBoundedNew = new GenericBounded(); // After java 1.7
     }
 
     /*
@@ -52,7 +55,7 @@ public class Test {
         list.add("Mostafa");
         list.add(new Human());
         list.add(10);
-        Personnel personnel = (Personnel) list.get(0); //ClassCastException
+        Human human = (Human) list.get(0); //ClassCastException
     }
     private static void testArrayListStepTwo() {
         ArrayList list = new ArrayList();
@@ -60,14 +63,14 @@ public class Test {
         list.add(new Human());
         list.add(10);
         if (list.get(0) instanceof Human){
-            Human personnel = (Human) list.get(0);
+            Human human = (Human) list.get(0);
         }
     }
 
     private static void testUseGenericInArrayList() {
         ArrayList<Human> list = new ArrayList<>();
 //        list.add("Mostafa");
-//        list.add(new Human());
+        list.add(new Human());
 //        list.add(10);
         Human human = list.get(0); // no need to instanceof and down casting
     }

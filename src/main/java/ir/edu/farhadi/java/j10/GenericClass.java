@@ -12,6 +12,7 @@ package ir.edu.farhadi.java.j10;
 public class GenericClass<T> {
     T t;
 
+
     public T getT() {
         return t;
     }
