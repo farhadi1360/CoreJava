@@ -10,8 +10,12 @@ public class ESB implements HttpRest,FileSystem{
 
     @Override
     public void contractMode() {
+
         HttpRest.super.contractMode();
+
         FileSystem.super.contractMode();
+
+
         System.out.println(" ESB can handle multi contract");
     }
 }

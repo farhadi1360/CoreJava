@@ -7,7 +7,9 @@ package ir.edu.farhadi.java.j11.polimorphism.simple;
  */
 public class Test {
     public static void main(String[] args) {
-        Repository repository = new BookRepository();
+        Repository repository = new StudentRepository();
+
+
         repository.save();
     }
 }

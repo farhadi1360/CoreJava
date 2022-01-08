@@ -9,7 +9,11 @@ public class Test {
 
     public static void main(String[] args) {
         Execute execute = new Execute();
-        execute.call(new CXF());
+        Contract contract = new Axis() ;
+
+
+
+        execute.call(contract);
 
     }
 }

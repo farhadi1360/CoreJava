@@ -8,6 +8,9 @@ package ir.edu.farhadi.java.j5.pattern.facade;
 public class Client {
 
     public static void main(String[] args) {
+        /*
+           sample with conversational State
+         */
         CustomerFacade customerFacade;
         customerFacade = new CustomerFacade();
         customerFacade.setFname("Mostafa");

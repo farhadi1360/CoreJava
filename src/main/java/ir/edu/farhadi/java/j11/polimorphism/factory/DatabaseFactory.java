@@ -6,6 +6,8 @@ package ir.edu.farhadi.java.j11.polimorphism.factory;
  * @author Mostafa.Farhadi c@2021
  */
 public class DatabaseFactory {
+
+
     public static DataBase getDataBase(String type) {
         DataBase dataBase;
         switch (type) {

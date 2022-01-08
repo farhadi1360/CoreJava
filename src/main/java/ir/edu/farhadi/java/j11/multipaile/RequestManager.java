@@ -6,6 +6,9 @@ package ir.edu.farhadi.java.j11.multipaile;
  * @author Mostafa.Farhadi c@2021
  */
 public class RequestManager {
+
+
+
     private void httpRateManege() {
         HttpRest.rateLimit();
     }

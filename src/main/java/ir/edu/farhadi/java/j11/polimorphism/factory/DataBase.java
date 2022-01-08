@@ -5,7 +5,7 @@ package ir.edu.farhadi.java.j11.polimorphism.factory;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public interface DataBase {
+public  interface DataBase {
 
-    void getConnection();
+    void  getConnection();
 }

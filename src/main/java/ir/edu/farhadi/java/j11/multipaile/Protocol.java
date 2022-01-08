@@ -5,6 +5,7 @@ package ir.edu.farhadi.java.j11.multipaile;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public interface Protocol {
+public  interface Protocol {
+
     abstract void contractMode();
 }

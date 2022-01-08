@@ -28,6 +28,5 @@ public class TestMarker {
                 System.out.println(object.getClass().getName() + "    Fail Security");
             }
         }
-
     }
 }

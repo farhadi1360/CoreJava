@@ -12,7 +12,11 @@ import java.sql.DatabaseMetaData;
 public class TestDatabase {
 
     public static void main(String[] args) {
+
+
         DataBase dataBase = DatabaseFactory.getDataBase("");
+
+
         dataBase.getConnection();
     }
 }

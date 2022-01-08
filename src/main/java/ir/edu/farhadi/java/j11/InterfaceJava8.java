@@ -7,6 +7,7 @@ package ir.edu.farhadi.java.j11;
  */
 public interface InterfaceJava8 {
 
+
     default void calculate() {
         System.out.println("calculate Bailing");
     }
