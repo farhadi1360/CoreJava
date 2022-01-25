@@ -38,7 +38,9 @@ public class TestIO {
 
 //******************************Write To File *****************************
 //        writeToFile();
-        readFromStringAndWriteToFile("Ip : localhost , Port : 7001");
+//        readFromStringAndWriteToFile("Ip : localhost , Port : 7001");
+//        writeDataOutputStream("Java is best ");
+        writeByEncodingPassing();
 
     }
 
@@ -72,4 +74,38 @@ public class TestIO {
         FileOutputStream fos = new FileOutputStream("setting.txt");
         fos.write(input.getBytes());
     }
+
+    private static void writeDataOutputStream(String input) throws IOException {
+        FileOutputStream fos = new FileOutputStream("setting.txt");
+        fos.write(input.getBytes());
+
+
+        // using filter output stream
+        DataOutputStream dos = new DataOutputStream(fos);
+        dos.writeChars(input);
+
+        BufferedOutputStream bos = new BufferedOutputStream(fos);
+        bos.write(input.getBytes());
+
+        PrintStream printStream = new PrintStream(fos);
+        printStream.print(input);
+
+        // using output stream writer
+        FileWriter fileWriter = new FileWriter("book1.txt");
+        fileWriter.write(input);
+
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printStream.print(input);
+
+    }
+
+    private static void writeByEncodingPassing() throws IOException {
+        String input = "من زبان برنامه نویسی جاوا را دوست دارم";
+        OutputStream fos = new FileOutputStream("book2.txt");
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fos, "UTF8"));
+        bufferedWriter.write(input);
+        bufferedWriter.close();
+        System.out.println("Writing to file was  Completed.");
+    }
+
 }
