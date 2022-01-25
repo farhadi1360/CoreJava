@@ -33,8 +33,12 @@ public class TestIO {
 //          readFile(System.in);
 //          readFile(new FileInputStream("test.txt"));
 //          readFile(new URL("https://www.google.com/").openStream());
+//          readString();
+
+
 //******************************Write To File *****************************
-        writeToFile();
+//        writeToFile();
+        readFromStringAndWriteToFile("Ip : localhost , Port : 7001");
 
     }
 
@@ -43,6 +47,11 @@ public class TestIO {
         while ((b = inputStream.read()) != -1) {
             System.out.printf("%c", b);
         }
+    }
+
+    private static void readString() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(bufferedReader.readLine());
     }
 
     private static void writeToFile() throws IOException {
@@ -59,5 +68,8 @@ public class TestIO {
         System.out.println("Write To File was Down");
     }
 
-
+    private static void readFromStringAndWriteToFile(String input) throws IOException {
+        FileOutputStream fos = new FileOutputStream("setting.txt");
+        fos.write(input.getBytes());
+    }
 }
