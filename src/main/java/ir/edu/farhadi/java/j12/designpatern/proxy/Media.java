@@ -7,7 +7,9 @@ import java.io.File;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public interface Media {
+public  interface Media {
 
-    void uploadingToS3Services(File file);
+     void uploadingToS4Services(File file);
+
+
 }

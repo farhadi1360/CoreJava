@@ -1,6 +1,5 @@
 package ir.edu.farhadi.java.j12.designpatern.proxy;
 
-import ir.edu.farhadi.java.j5.pattern.singlton.FileLogger;
 
 import java.io.File;
 
@@ -12,8 +11,11 @@ import java.io.File;
 public class Client {
     public static void main(String[] args) {
         File file = null;
+
         Media media = MediaFactory.getS3Service();
 
-        media.uploadingToS3Services(file);
+        media.uploadingToS4Services(file);
+
+
     }
 }

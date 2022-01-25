@@ -9,9 +9,10 @@ public class Test {
 
 
     public static void main(String[] args) {
-        step1();
-        step2();
-        step3();
+//        step1();
+//        step2();
+//        step3();
+        step4();
     }
     /**
      * in this method i tried show how can we compering reference and value object
@@ -23,7 +24,7 @@ public class Test {
         String b = new String("Farhadi");
 
         String s2 = "MostafaFarhadi".substring(0, 7); // --> "Mostafa"
-        String s1 = "";
+        String s1 = "Mostafa";
         // compare address
         if (s2 == s1)
             System.out.println("Compare String with ==");
@@ -36,7 +37,7 @@ public class Test {
      * in this method i tried to described  address assigning
      */
     public static void step2() {
-        String str1 = "MOS";
+        String str1 = "MOS"; // 1500
         String str2 = str1;
         if (str1.equals(str2))
             System.out.println("Compare String with .equals");

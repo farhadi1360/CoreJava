@@ -10,7 +10,7 @@ import java.io.File;
 public class AmazonMediaManagement implements Media {
 
     @Override
-    public void uploadingToS3Services(File file) {
+    public void uploadingToS4Services(File file) {
         System.out.println("Uploading was success to S3 Amazon");
     }
 }

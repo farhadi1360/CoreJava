@@ -9,4 +9,5 @@ import java.util.Objects;
  */
 public enum PackagePlan2  {
     GOLD , SILVER
+
 }

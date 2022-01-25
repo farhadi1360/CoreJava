@@ -7,7 +7,7 @@ package ir.edu.farhadi.java.j12.designpatern.strategy;
  */
 public class ESB {
     /*
-    in Strategy pattern this field called Context Object Or Strategy Object
+       in Strategy pattern this field called Context Object Or Strategy Object
      */
     private ServiceBus serviceBus;
 

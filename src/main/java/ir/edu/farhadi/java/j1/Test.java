@@ -7,6 +7,8 @@ package ir.edu.farhadi.java.j1;
  */
 
 public class Test {
+
+
 	/*
 	   these space define for all fields of class
 	   Fields are allocated in Heap (as object)

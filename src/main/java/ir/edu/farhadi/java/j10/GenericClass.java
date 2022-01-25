@@ -20,4 +20,5 @@ public class GenericClass<T> {
     public void setT(T t) {
         this.t = t;
     }
+
 }

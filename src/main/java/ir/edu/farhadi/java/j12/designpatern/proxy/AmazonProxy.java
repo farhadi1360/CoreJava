@@ -8,12 +8,13 @@ import java.io.File;
  * @author Mostafa.Farhadi c@2021
  */
 public class AmazonProxy implements Media {
+
     private Media s3Service = new AmazonMediaManagement();
 
     @Override
-    public void uploadingToS3Services(File file) {
+    public void uploadingToS4Services(File file) {
         System.out.println("set all our config ");
         System.out.println("set all security ");
-        s3Service.uploadingToS3Services(file);
+        s3Service.uploadingToS4Services(file);
     }
 }

@@ -8,6 +8,7 @@ package ir.edu.farhadi.java.j12.designpatern.anonymous;
 public class Test {
 
     public static void main(String[] args) {
+
         Human student = new Human() {
             @Override
             public void eat() {

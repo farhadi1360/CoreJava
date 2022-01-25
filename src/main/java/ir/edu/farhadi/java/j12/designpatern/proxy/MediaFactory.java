@@ -6,7 +6,9 @@ package ir.edu.farhadi.java.j12.designpatern.proxy;
  * @author Mostafa.Farhadi c@2021
  */
 public class MediaFactory {
+
     private MediaFactory(){}
+
     public static Media getS3Service() {
         return new AmazonProxy();
     }

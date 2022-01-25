@@ -12,6 +12,7 @@ public class Client {
            as you can see we can pass each strategy on runtime
          */
 
+
         ESB esb1 = new ESB(new Database());
         esb1.readAllDataByStrategy();
 
@@ -22,8 +23,8 @@ public class Client {
         esb3.readAllDataByStrategy();
 
         ESB esb4 = new ESB(new TCPNet());
+        esb4.readAllDataByStrategy();
 
-        esb1.readAllDataByStrategy();
     }
 
 }

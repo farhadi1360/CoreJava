@@ -5,7 +5,7 @@ package ir.edu.farhadi.java.j12.designpatern.strategy;
  *
  * @author Mostafa.Farhadi c@2021
  */
-public interface ServiceBus {
+public  interface ServiceBus {
 
-    void readDate();
+     void readDate();
 }

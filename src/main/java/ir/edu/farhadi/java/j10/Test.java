@@ -17,9 +17,9 @@ public class Test {
 
 //        simpleGenericType();
 //        useBoundedType();
-//        testArrayListSteepOne();
+        testArrayListSteepOne();
 //        testArrayListStepTwo();
-        testUseGenericInArrayList();
+//        testUseGenericInArrayList();
     }
 
     private static void simpleGenericType() {

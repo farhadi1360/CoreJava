@@ -6,7 +6,7 @@ package ir.edu.farhadi.java.j12.designpatern.enums;
  * @author Mostafa.Farhadi c@2021
  */
 public class PackagePlan {
-    public final static PackagePlan GOLD = new PackagePlan();
-    public final static PackagePlan SILVER = new PackagePlan();
+    public final static PackagePlan GOLD = new PackagePlan(); // 100
+    public final static PackagePlan SILVER = new PackagePlan();//200
 
 }
