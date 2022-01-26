@@ -67,6 +67,7 @@ public class TestIO {
 
         PrintStream printStream = new PrintStream(outputStream);
         printStream.println(simple);
+        printStream.close();
         System.out.println("Write To File was Down");
     }
 
@@ -95,7 +96,7 @@ public class TestIO {
         fileWriter.write(input);
 
         PrintWriter printWriter = new PrintWriter(fileWriter);
-        printStream.print(input);
+        printWriter.print(input);
 
     }
 
