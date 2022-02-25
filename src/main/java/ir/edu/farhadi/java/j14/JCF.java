@@ -10,7 +10,9 @@ public class JCF {
    static int PEOPLE_COUNT = 1_000_000;
     static int FEATURE_DIMENSIONS = 512;
 
-
+/*
+  this is best practice
+ */
     public static void main(String[] args) {
 
         System.out.println("Number of Cores: " + Runtime.getRuntime().availableProcessors());
