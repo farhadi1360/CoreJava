@@ -5,5 +5,7 @@ public class Test {
         Protocol protocol = new Protocol("RSTP");
         Protocol.Handler protocolHandler = protocol.new Handler();
         protocolHandler.doHandle();
+
+        Protocol.Log.doLog();
     }
 }

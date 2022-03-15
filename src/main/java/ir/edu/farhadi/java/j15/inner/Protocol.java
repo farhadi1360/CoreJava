@@ -38,4 +38,10 @@ public class Protocol {
         }
     }
 
+    public static class Log{
+        public static void doLog() {
+            System.out.println("Logger");
+        }
+    }
+
 }
