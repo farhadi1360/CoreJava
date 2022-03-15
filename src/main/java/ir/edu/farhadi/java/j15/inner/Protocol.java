@@ -6,9 +6,17 @@ package ir.edu.farhadi.java.j15.inner;
     New syntax's
     Object Creation:  Protocol.new Handler() or Protocol.new SecurityCheck()
     Outer  reference: Protocol.this
+
  */
 public class Protocol {
     private String name;
+    private String code;
+    public String title;
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 
     public Protocol(String name) {
         this.name = name;
