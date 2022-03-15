@@ -8,10 +8,12 @@ package ir.edu.farhadi.java.j15.inner;
     Outer  reference: Protocol.this
 
  */
-public class Protocol {
+public class Protocol extends Device /*Inheritance */{
     private String name;
     private String code;
     public String title;
+    /* composition0n */
+    private Handler handler;
 
     public void setTitle(String title) {
         this.title = title;
@@ -22,7 +24,8 @@ public class Protocol {
         this.name = name;
     }
 
-    public class Handler{
+    /*  inclusion */
+    public class Handler extends Device{
         SecurityCheck securityCheck = new SecurityCheck();
         public void doHandle(){
             if(securityCheck.isSecure()){
