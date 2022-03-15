@@ -9,23 +9,27 @@ package ir.edu.farhadi.java.j15.inner;
 
  */
 public class Protocol extends Device /*Inheritance */{
+
     private String name;
     private String code;
     public String title;
     /* composition0n */
     private Handler handler;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-
     public Protocol(String name) {
         this.name = name;
+        System.out.println("call constructor of Protocol ");
+
+        setType("Protocol Type");
     }
 
     /*  inclusion */
     public class Handler extends Device{
+        public Handler() {
+            System.out.println("call constructor of Handler ");
+            setType("Handler Type");
+        }
+
         SecurityCheck securityCheck = new SecurityCheck();
         public void doHandle(){
             if(securityCheck.isSecure()){
