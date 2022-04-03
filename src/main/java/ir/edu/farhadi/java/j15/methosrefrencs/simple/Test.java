@@ -1,4 +1,4 @@
-package ir.edu.farhadi.java.j15.lombda;
+package ir.edu.farhadi.java.j15.methosrefrencs.simple;
 
 import java.util.function.Consumer;
 

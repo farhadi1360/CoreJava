@@ -33,11 +33,14 @@ public class Test {
         userList.forEach(System.out::println);
     }
 
-    private static void sample2ForMethodReferencing(){
-        Converter<UserEntity,UserDTO> converter = Mapper::toDTO;
-        UserDTO userDTO = converter.convert( new UserEntity("Mustafa","Farhadi"));
-        System.out.println(userDTO);
+    private static void sample2ForMethodReferencing() {
+        Converter<UserEntity, UserDTO> converter = Mapper::toDTO;
+        doAction(converter);
 
     }
 
+    private static void doAction(Converter<UserEntity, UserDTO> converter) {
+        UserDTO userDTO = converter.convert(new UserEntity("Mustafa", "Farhadi"));
+        System.out.println(userDTO);
+    }
 }
