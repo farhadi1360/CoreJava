@@ -1,4 +1,4 @@
-package ir.edu.farhadi.java.j15.lombda.sort;
+package ir.edu.farhadi.java.j15.anonymous;
 
 import java.util.Arrays;
 import java.util.Comparator;
