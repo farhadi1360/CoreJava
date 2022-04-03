@@ -16,6 +16,12 @@ public class Protocol extends Device /*Inheritance */{
     /* composition0n */
     private Handler handler;
 
+
+    public static class checkVideo{
+
+    }
+
+
     public Protocol(String name) {
         this.name = name;
         System.out.println("call constructor of Protocol ");

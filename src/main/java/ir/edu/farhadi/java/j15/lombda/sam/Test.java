@@ -9,7 +9,7 @@ public class Test {
     public static void oldWay(){
         Peapering p = new Peapering();
 
-        p.pepperInfoInfo(new DataSetProcessing() {
+        p.pepperInfo(new DataSetProcessing() {
             @Override
             public void multiPle() {
                 System.out.println("Call multiPle");
@@ -19,7 +19,7 @@ public class Test {
 
     public static void newWay(){
         Peapering p = new Peapering();
-        p.pepperInfoInfo(()-> System.out.println("Call multiPle"));
+        p.pepperInfo(()-> System.out.println("Call multiPle"));
     }
 
 
