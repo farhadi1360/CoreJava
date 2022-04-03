@@ -9,6 +9,9 @@ import java.util.stream.Stream;
 public class Test {
     public static void main(String[] args) {
         test1();
+        test2();
+        test3();
+        test4();
 
     }
 
@@ -41,4 +44,10 @@ public class Test {
         System.out.print(evenNumbersList);
     }
 
+    private static void test4() {
+        Stream.of(1.5, 2.5, 3.5)
+                .mapToInt(Double::intValue)
+                .mapToObj(i -> "user" + i)
+                .forEach(System.out::println);
+    }
 }
