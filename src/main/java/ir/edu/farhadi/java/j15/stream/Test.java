@@ -1,5 +1,7 @@
 package ir.edu.farhadi.java.j15.stream;
 
+import ir.edu.farhadi.java.j15.anonymous.Student;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,10 +10,11 @@ import java.util.stream.Stream;
 
 public class Test {
     public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
-        test4();
+//        test1();
+//        test2();
+//        test3();
+//        test4();
+        test5();
 
     }
 
@@ -33,14 +36,14 @@ public class Test {
     private static void test3() {
         List<Integer> list = new ArrayList<Integer>();
 
-        for(int i = 1; i< 10; i++){
+        for (int i = 1; i < 10; i++) {
             list.add(i);
         }
 
         Stream<Integer> stream = list.stream();
         List<Integer> evenNumbersList =
-                stream.filter(i -> i%2 == 0)
-                .collect(Collectors.toList());
+                stream.filter(i -> i % 2 == 0)
+                        .collect(Collectors.toList());
         System.out.print(evenNumbersList);
     }
 
@@ -49,5 +52,27 @@ public class Test {
                 .mapToInt(Double::intValue)
                 .mapToObj(i -> "user" + i)
                 .forEach(System.out::println);
+    }
+
+    private static void test5() {
+        Student[] students = {
+                new Student("Ali", "Darabi", 160),
+                new Student("Mustafa", "Farhadi", 100),
+                new Student("Mohammad", "Reaei", 200),
+                new Student("Reza", "javadi", 150)
+
+        };
+
+        List<Student> studentList = Arrays.asList(students.clone());
+
+        List<Student> filteredStudent = studentList.stream()
+                .filter(s -> s.getName().startsWith("M"))
+                .collect(Collectors.toList());
+
+        System.out.println("****************Before Filtering **************");
+        studentList.forEach(System.out::println);
+        System.out.println("****************After Filtering **************");
+        filteredStudent.forEach(System.out::println);
+
     }
 }

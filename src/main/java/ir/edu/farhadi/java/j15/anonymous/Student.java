@@ -34,4 +34,13 @@ public class Student {
     public void setCode(int code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", family='" + family + '\'' +
+                ", code=" + code +
+                '}';
+    }
 }
