@@ -3,13 +3,13 @@ package ir.edu.farhadi.java.j15.methosrefrencs;
 public class UserDTO {
 
     String name;
-
+    String family;
     public UserDTO(String name, String family) {
         this.name = name;
         this.family = family;
     }
 
-    String family;
+
 
 
     public String getName() {

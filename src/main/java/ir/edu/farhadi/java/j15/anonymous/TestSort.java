@@ -8,9 +8,10 @@ public class TestSort {
     public static void main(String[] args) {
 
         Student[] students = {
-                new Student("Ali", "Darabi", 160),
+
                 new Student("Mustafa", "Farhadi", 100),
-                new Student("Reza", "javadi", 150)
+                new Student("Reza", "javadi", 150),
+                new Student("Ali", "Darabi", 160)
 
         };
         oldWay(students);
@@ -21,6 +22,8 @@ public class TestSort {
     }
 
     public static void oldWay(Student[] students) {
+
+//        Arrays.sort(students, (s1, s2) -> s1.getName().compareTo(s2.getName()));
         Arrays.sort(students, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {

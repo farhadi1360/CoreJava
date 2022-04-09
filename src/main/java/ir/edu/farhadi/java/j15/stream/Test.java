@@ -20,7 +20,7 @@ public class Test {
 
     private static void test1() {
         Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        stream.forEach(p -> System.out.println(p));
+        stream.forEach(System.out::println);
     }
 
     private static void test2() {
@@ -41,6 +41,8 @@ public class Test {
         }
 
         Stream<Integer> stream = list.stream();
+
+
         List<Integer> evenNumbersList =
                 stream.filter(i -> i % 2 == 0)
                         .collect(Collectors.toList());

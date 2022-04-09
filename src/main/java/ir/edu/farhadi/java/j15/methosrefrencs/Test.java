@@ -11,8 +11,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-//        sample1ForMethodReferencing();
-        sample2ForMethodReferencing();
+        sample1ForMethodReferencing();
+//        sample2ForMethodReferencing();
 
     }
 
@@ -27,10 +27,16 @@ public class Test {
         };
 
         List<UserEntity> userEntityList = Arrays.asList(userEntities);
-        List<UserEntity> userList = new LinkedList<>();
+
+
+        List<UserEntity> userList = new ArrayList<>();
+
         Consumer<UserEntity> userDTOConsumer = userList::add;
+        Consumer consumer = System.out::println;
+
         userEntityList.forEach(userDTOConsumer);
-        userList.forEach(System.out::println);
+
+        userList.forEach(consumer);
     }
 
     private static void sample2ForMethodReferencing() {
