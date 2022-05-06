@@ -87,7 +87,7 @@ public class JCF {
         map.put("User1", new Student("Mostafa", "Farhadi", 100));
         map.put("User2", new Student("Javad", "Karimi", 200));
         map.put("User3", new Student("Mohamad", "HajiEsmaily", 300));
-
+//
 //        Student s1 = map.get("User1");
 //        System.out.println( s1.getName() + " : " + s1.getCode() );
 //

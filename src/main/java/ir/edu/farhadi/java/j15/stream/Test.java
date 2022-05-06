@@ -5,6 +5,7 @@ import ir.edu.farhadi.java.j15.anonymous.Student;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -75,6 +76,14 @@ public class Test {
         studentList.forEach(System.out::println);
         System.out.println("****************After Filtering **************");
         filteredStudent.forEach(System.out::println);
-
     }
+    private static void testOptional(){
+        Optional<Student> student = getStudent();
+    }
+
+    public static Optional<Student> getStudent(){
+        Student students = new Student("Mustafa", "Farhadi", 100);
+        return Optional.of(students);
+    }
+
 }

@@ -8,29 +8,30 @@ public class JCF2 {
         Student student = new Student("Mostafa", "Farhadi", 100);
         Student student2 = new Student("Javad", "Karimi", 200);
         Student student3 = new Student("Mostafa", "Farhadi", 300);
-
-        Student[] students = {student, student2, student3};
-
-        calculateSumCodeByArray(students);
+//
+//        Student[] students = {student, student2, student3};
+//
+//        calculateSumCodeByArray(students);
 
 
         ArrayList studentList = new ArrayList<>();
         studentList.add(student);
         studentList.add(student2);
         studentList.add(student3);
-
-        calculateSumCodeByArrayList(studentList);
-
-
-        calculateSumCodeByGenericArrayList(studentList);
-
-
-        calculateSumCodeByList(studentList);
-
-
-        calculateSumCodeByCollection(studentList);
-
+//
+//        calculateSumCodeByArrayList(studentList);
+//
+//
+//        calculateSumCodeByGenericArrayList(studentList);
+//
+//
+//        calculateSumCodeByList(studentList);
+//
+//
+//        calculateSumCodeByCollection(studentList);
+//
         Map<String, Student> studentMap = new HashMap<>();
+
         studentMap.put("User1", new Student("Mostafa", "Farhadi", 100));
         studentMap.put("User2", new Student("Javad", "Karimi", 200));
         studentMap.put("User3", new Student("Mohamad", "HajiEsmaily", 300));
@@ -87,6 +88,9 @@ public class JCF2 {
             sum += student.getCode();
         }
         System.out.println("The Sum Code In  Collection No Generic Mode Is : " + sum);
+
+
+
         Iterator<Student> iter = collection.iterator();
         while (iter.hasNext()) {
             sum += iter.next().getCode();

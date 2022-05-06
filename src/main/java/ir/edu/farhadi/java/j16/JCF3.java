@@ -8,7 +8,7 @@ public class JCF3 {
     public static void main(String[] args) {
 //        synchronizedList();
 //        synchronizedMap();
-//        wildCardExceptionInGenericMode();
+        wildCardExceptionInGenericMode();
 
     }
 
@@ -50,7 +50,8 @@ public class JCF3 {
     }
 
     static void wildCardExceptionInGenericMode() {
-        List<?> list = new ArrayList<>(Arrays.asList(new Student("Mostafa", "Farhadi", 100),
+        List<?> list = new ArrayList<>(Arrays.asList
+                (new Student("Mostafa", "Farhadi", 100),
                 new Student("Javad", "Karimi", 200),
                 new Student("Mohamad", "HajiEsmaily", 300)
         ));
