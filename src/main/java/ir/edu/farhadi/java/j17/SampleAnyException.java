@@ -10,7 +10,7 @@ public class SampleAnyException {
 //        test2RunTimeException();
 //        test3RunTimeException();
 //        test4RunTimeException();
-//        testCheckExceptions();
+//        test1CheckExceptions();
 //        test2CheckExceptions();
 //        test3CheckExceptions();
         test4CheckExceptions();
@@ -94,13 +94,14 @@ public class SampleAnyException {
             }catch (NullPointerException ex){
                 System.out.println("step 6");
             }
+
         }
     }
     private static void test3CheckExceptions(){
         try {
             callServiceLayer();
         } catch (ClassNotFoundException e) {
-            System.out.println("ClassNotFoundException handel iv view layer ");
+            System.out.println("ClassNotFoundException handel in view layer ");
         }
     }
 
