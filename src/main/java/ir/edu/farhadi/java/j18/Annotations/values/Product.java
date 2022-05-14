@@ -6,6 +6,14 @@ public class Product {
     private String name;
     private int code;
 
+
+    @PolicyCheck(user = "Admin")
+    private void saveProduct() {
+        System.out.println("The Product was saved");
+    }
+
+
+
     public double getPrice() {
         return price;
     }
