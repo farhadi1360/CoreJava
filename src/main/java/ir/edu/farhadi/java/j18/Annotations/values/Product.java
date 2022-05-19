@@ -1,7 +1,7 @@
 package ir.edu.farhadi.java.j18.Annotations.values;
 
 public class Product {
-    @Validation(min = 0, max = 50000)
+    @Validation(min = -10, max = 50000)
     private double price;
     private String name;
     private int code;

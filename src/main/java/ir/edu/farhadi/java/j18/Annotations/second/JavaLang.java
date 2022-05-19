@@ -6,6 +6,6 @@ public class JavaLang {
     @Hard
     private String title;
 
-//    @Hard --> is not put hear because do not define ElementType.Method
+  //  @Hard //--> is not put hear because do not define ElementType.Method
     public void test(){}
 }

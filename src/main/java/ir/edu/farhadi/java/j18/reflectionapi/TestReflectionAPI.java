@@ -40,10 +40,10 @@ public class TestReflectionAPI {
     }
 
     private static void step4() {
-        Class std = Student.class;
-        Class srv = StudentService.class;
-        printTest(std);
-        printTest(srv);
+        Class object = Student.class;
+        Class interfaceS = StudentService.class;
+        printTest(object);
+        printTest(interfaceS);
     }
 
     private static void step5() throws InstantiationException, IllegalAccessException {

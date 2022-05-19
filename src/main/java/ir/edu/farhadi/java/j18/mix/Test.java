@@ -35,6 +35,7 @@ public class Test {
                             field.setAccessible(true);
                             try {
                                 field.set(object,new Double(validation.max()));
+
                                 Product studentCreated = (Product) object;
                                 System.out.println("New Product price is :" +studentCreated.getPrice());
                             } catch (IllegalAccessException e) {
@@ -70,12 +71,17 @@ public class Test {
 
 
  /*
-             Normal        Reflection
+            in the  Normal  Mode we should be use this format
 
-            new X()       c.newInstance()
-            obj.m()       m.invoke(obj);
-            obj.setF(v)   f.set(obj,v);
-            obj.getF()    f.get(obj);
+            new Object()
+            object.method()
+            obj.setField(v)
+            obj.getField()
+             in the  Reflection  Mode we should be use this format
+             class.newInstance()
+             method.invoke(obj);
+              f.setField(obj,v);
+               f.getField(obj);
      */
 
 }
