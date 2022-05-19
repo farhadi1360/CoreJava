@@ -72,16 +72,15 @@ public class Test {
 
  /*
             in the  Normal  Mode we should be use this format
-
-            new Object()
-            object.method()
-            obj.setField(v)
-            obj.getField()
+                    new Object()
+                    object.method()
+                    object.setField(value)
+                    object.getField()
              in the  Reflection  Mode we should be use this format
-             class.newInstance()
-             method.invoke(obj);
-              f.setField(obj,v);
-               f.getField(obj);
+                     class.newInstance()
+                     method.invoke(object);
+                     field.setField(object,value);
+                     field.getField(object);
      */
 
 }
