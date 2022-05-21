@@ -1,4 +1,5 @@
-package ir.edu.farhadi.java.j12.designpatern.proxy;
+package ir.edu.farhadi.java.j19.dynamicproxy.pattern;
+
 
 import java.io.File;
 

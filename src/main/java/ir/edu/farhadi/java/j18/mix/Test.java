@@ -54,6 +54,7 @@ public class Test {
             for (Method method : methods) {
                 if (method.isAnnotationPresent(PolicyCheck.class)) {
                     PolicyCheck policyCheck = method.getAnnotation(PolicyCheck.class);
+
                     if(policyCheck!=null){
                         if (userPassedInRuntime.equalsIgnoreCase(policyCheck.user())) {
                             Object obj = c.newInstance();

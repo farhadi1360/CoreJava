@@ -1,0 +1,4 @@
+call=ir.edu.farhadi.java.j19.di.VoiceCall
+voice=ir.edu.farhadi.java.j19.di.VoiceCall
+video=ir.edu.farhadi.java.j19.di.VideoCall
+message=ir.edu.farhadi.java.j19.di.MessageCall

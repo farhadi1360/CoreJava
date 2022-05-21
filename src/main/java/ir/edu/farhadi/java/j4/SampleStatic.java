@@ -9,7 +9,7 @@ public  class SampleStatic {
     static int a ;
 
     /*
-     * all of the static context can access to all of the static fields and methods
+     * all of the static context.txt can access to all of the static fields and methods
      */
     static {
         a=10;
