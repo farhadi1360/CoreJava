@@ -6,13 +6,13 @@ public class CallTarget {
     /*
         1 way : this is full dependency to an object
      */
-    Calling calling2 = new VideoCall();
+//    Calling calling2 = new VideoCall();
     /*
         2 way : this is full dependency to an object
      */
-    Calling calling3 = FactoryPattern.getCall("video");
+//    Calling calling3 = FactoryPattern.getCall("video");
 
-    @MostafaAutowired(bean = "video")
+    @MostafaAutowired(bean = "message")
     private Calling calling;
 
     public Calling getCalling() {
