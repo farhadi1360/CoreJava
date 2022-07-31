@@ -36,6 +36,7 @@ public class JCF3 {
         Map<String, Student> stringStudentMap = Collections.synchronizedMap(studentMap);
 
 
+
         calculateSumCodeByCollection(stringStudentMap.values());
     }
 

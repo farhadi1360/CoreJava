@@ -2,41 +2,53 @@ package ir.edu.farhadi.java.j15.methosrefrencs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 public class Test {
 
     public static void main(String[] args) {
-
-        sample1ForMethodReferencing();
+//        testByLambda();
+//        sample1ForMethodReferencing();
 //        sample2ForMethodReferencing();
-
+        testByMethodReference();
     }
 
     /* i am going to create new list of userEntity by using
         method reference and Consumer (new feathers in java 8)
      */
-    private static void sample1ForMethodReferencing(){
-        UserEntity [] userEntities = {
-                new UserEntity("Mustafa","Farhadi"),
-                new UserEntity("Javad","Karimi"),
-                new UserEntity("Alireza","Darabi")
-        };
-
-        List<UserEntity> userEntityList = Arrays.asList(userEntities);
-
-
+    private static void sample1ForMethodReferencing() {
+        List<UserEntity> userEntityList = Arrays.asList(getAllUserEntities());
         List<UserEntity> userList = new ArrayList<>();
-
         Consumer<UserEntity> userDTOConsumer = userList::add;
         Consumer consumer = System.out::println;
-
         userEntityList.forEach(userDTOConsumer);
-
         userList.forEach(consumer);
+    }
+
+    private static void testByLambda() {
+        List<UserEntity> userEntityList = Arrays.asList(getAllUserEntities());
+        List<UserEntity> userList = new ArrayList<>();
+        userEntityList.forEach(user -> {
+            userList.add(user);
+        });
+        userList.forEach(System.out::println);
+    }
+
+    private static void testByMethodReference() {
+        List<UserEntity> userEntityList = Arrays.asList(getAllUserEntities());
+        List<UserEntity> userList = new ArrayList<>();
+        userEntityList.forEach(userList::add);
+        userList.forEach(System.out::println);
+    }
+
+    private static UserEntity[] getAllUserEntities() {
+        UserEntity[] userEntities = {
+                new UserEntity("Mustafa", "Farhadi"),
+                new UserEntity("Javad", "Karimi"),
+                new UserEntity("Alireza", "Darabi")
+        };
+        return userEntities;
     }
 
     private static void sample2ForMethodReferencing() {

@@ -11,9 +11,9 @@ public class SampleAnyException {
 //        test3RunTimeException();
 //        test4RunTimeException();
 //        test1CheckExceptions();
-//        test2CheckExceptions();
+        test2CheckExceptions();
 //        test3CheckExceptions();
-        test4CheckExceptions();
+//        test4CheckExceptions();
     }
 
     private static void test1RunTimeException() {

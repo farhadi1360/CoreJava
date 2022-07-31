@@ -12,7 +12,7 @@ public class CallTarget {
      */
 //    Calling calling3 = FactoryPattern.getCall("video");
 
-    @MostafaAutowired(bean = "message")
+    @MostafaAutowired(bean = "video")
     private Calling calling;
 
     public Calling getCalling() {

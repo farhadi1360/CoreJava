@@ -19,6 +19,18 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.gwt-crypto/gwt-crypto -->
+        <dependency>
+            <groupId>com.googlecode.gwt-crypto</groupId>
+            <artifactId>gwt-crypto</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

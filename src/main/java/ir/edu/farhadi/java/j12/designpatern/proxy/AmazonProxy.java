@@ -16,5 +16,7 @@ public class AmazonProxy implements Media {
         System.out.println("set all our config ");
         System.out.println("set all security ");
         s3Service.uploadingToS3Services(file);
+        System.out.println("set all security ");
+        System.out.println("set all security ");
     }
 }

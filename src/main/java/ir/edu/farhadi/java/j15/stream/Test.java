@@ -2,10 +2,7 @@ package ir.edu.farhadi.java.j15.stream;
 
 import ir.edu.farhadi.java.j15.anonymous.Student;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -31,12 +28,10 @@ public class Test {
                 .map(String::toUpperCase)
                 .sorted()
                 .forEach(System.out::println);
-
     }
 
     private static void test3() {
         List<Integer> list = new ArrayList<Integer>();
-
         for (int i = 1; i < 10; i++) {
             list.add(i);
         }
@@ -84,6 +79,14 @@ public class Test {
     public static Optional<Student> getStudent(){
         Student students = new Student("Mustafa", "Farhadi", 100);
         return Optional.of(students);
+    }
+
+    public static void  test6(){
+            Set<String> authorities = Arrays.asList("Admin", "User", "PowerUser").stream().collect(Collectors.toSet());
+        List<GrantedAuthority> ga = authorities.stream()
+                .map(SimpleGrantedAuthority::new)
+                .collect(Collectors.toList());
+
     }
 
 }

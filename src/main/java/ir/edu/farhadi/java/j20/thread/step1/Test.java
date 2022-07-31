@@ -3,7 +3,7 @@ package ir.edu.farhadi.java.j20.thread.step1;
 
 public class Test {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         LinuxFileCopyRunnable fileCopy = new LinuxFileCopyRunnable();
         LinuxMusicPlayerRunnable musicPlayer = new LinuxMusicPlayerRunnable();
         LinuxOpenBrowserRunnable openBrowser = new LinuxOpenBrowserRunnable();
@@ -15,8 +15,11 @@ public class Test {
         Thread threadTextEdit = new Thread(textEdit);
 
         threadFileCopy.start();
+        Thread.sleep(2000);
         threadMusicPlayer.start();
+        Thread.sleep(2000);
         threadOpenBrowser.start();
+        Thread.sleep(2000);
         threadTextEdit.start();
 
     }

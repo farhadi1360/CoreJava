@@ -40,12 +40,15 @@ public class NonDeterministic {
                 System.out.println("Process was terminated and call ShutdownHook");
             }
         };
-        Runtime.getRuntime().addShutdownHook( t );
-        System.out.println("The end of main thread");
 
+        Runtime.getRuntime().addShutdownHook( t );
 //        System.exit(0);
 //        Runtime.getRuntime().halt(0);
-//        throw new RuntimeException();
+        System.out.println("The end of main thread");
+
+
+//        Runtime.getRuntime().halt(0);
+        throw new RuntimeException();
     }
 
     /*

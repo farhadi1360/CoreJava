@@ -11,18 +11,15 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
 
 //        simpleWay();
-        AnonymousWay();
-//        LambdaWay();
+//        AnonymousWay();
+        LambdaWay();
 //        methodReferenceWay();
     }
 
     private static void simpleWay() throws InterruptedException {
         new LinuxFileCopyThread().start();
-        Thread.sleep(50);
         new LinuxMusicPlayerThread().start();
-        Thread.sleep(10);
         new LinuxOpenBrowserThread().start();
-        Thread.sleep(40);
         new LinuxTextEditThread().start();
     }
 
