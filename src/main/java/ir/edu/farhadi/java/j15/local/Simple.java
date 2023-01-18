@@ -9,6 +9,9 @@ public class Simple {
 
     public void doAction() {
         boolean state = false;
+
+
+
         class Action {
             String actionName = "Calling !!!";
             void call() {

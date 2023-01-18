@@ -20,11 +20,7 @@ public class SampleAnonymousAsReference {
                 return Integer.compare(s1.getCode(), s2.getCode());
             }
         };
-
         AnonymousAsReference(students, reference);
-
-
-
         for (Student student : students) {
             System.out.println(student.getName());
         }

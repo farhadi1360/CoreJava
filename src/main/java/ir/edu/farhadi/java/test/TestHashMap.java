@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class TestHashMap {
+public class    TestHashMap {
 
     @Test
     public  void hashMapFiltering() {
@@ -19,6 +19,8 @@ public class TestHashMap {
         hmap.put(22, "Java");
         hmap.put(33, "NodeJs");
         hmap.put(44, "Python");
+
+
 
         Map<Integer, String> result = hmap.entrySet()
                 .stream()

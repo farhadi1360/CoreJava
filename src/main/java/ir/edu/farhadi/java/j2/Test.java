@@ -55,6 +55,7 @@ public class Test {
         // i use literal string assignment that Jvm use it Interning as internally process
         String s1 = "MOS"; // new S1("MOS")
         String s2 = "MOS";
+
         if (s1 == s2)
             System.out.println("it is equal because it used from string pooling in java ");
        // but in these case we have 2 instance of objects
@@ -78,15 +79,13 @@ public class Test {
     public static void prs(String s1) {
         s1.concat("tafa");
     }
-    // another example is immutable test for Integer type
+
     public static void step5(){
-        Integer x=10;
-        testImmutable(x);
-        System.out.println(x);
+    float x= 10.5f; // 4byte
+    double y = 11.5; // 8 byte
+    float z = (float) y;
     }
 
-    private static void testImmutable(Integer x) {
-        x = 20;
-    }
+
 
 }

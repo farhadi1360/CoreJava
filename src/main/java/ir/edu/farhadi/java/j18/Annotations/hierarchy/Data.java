@@ -4,6 +4,6 @@ import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-//@Inherited
+@Inherited
 public @interface Data {
 }

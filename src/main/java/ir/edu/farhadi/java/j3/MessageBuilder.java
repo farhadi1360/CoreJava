@@ -14,6 +14,9 @@ public class MessageBuilder {
     // i used StringBuffer because this type is synchronize and it is threadsafe
     private StringBuffer message = new StringBuffer();
 
+
+//    private StringBuilder stringBuilder = new StringBuilder();
+
     /**
      * this method just can concat new String to old value
      * @param msg

@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 public class TestTask {
     public static void main(String[] args) {
         ExecutorService readService = Executors.newSingleThreadExecutor();
+
         ExecutorService processService = Executors.newSingleThreadExecutor();
         ExecutorService sendingService = Executors.newSingleThreadExecutor();
         Runnable readTask = new ReadFromDatabase();

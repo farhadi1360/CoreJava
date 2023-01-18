@@ -12,11 +12,14 @@ package ir.edu.farhadi.java.j3;
  */
 public class ImmutableClass {
 
+//    public ImmutableClass(){}
+
     // i defined final field for no changes
     private final int a;
 
     // created constructor for init final value
     public ImmutableClass(int a) {
+
         this.a = a;
     }
 

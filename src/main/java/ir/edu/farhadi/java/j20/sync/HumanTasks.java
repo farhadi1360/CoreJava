@@ -6,11 +6,11 @@ public class HumanTasks {
     public static void main(String[] args) throws InterruptedException {
         CreditCard creditCard = new CreditCard(50);
 
-        testThreadBySynchronized(creditCard);
+//        testThreadBySynchronized(creditCard);
 
 //        testThreadByLocking(creditCard);
 
-//        testThreadBySynchronized2(creditCard);
+        testThreadBySynchronized2(creditCard);
 
     }
 

@@ -12,15 +12,15 @@ public class Test {
     public static void main(String[] args) {
 
 //        step1();
-        //  step2();
+          step2();
 //        step4();
-        step6();
+//        step6();
     }
 
 
     private static void step1() {
         Boss boss = new Boss();
-        boss.setSalary(1000);
+        boss.setSalary(0);
         boss.setPersonnelCode("1000");
         boss.setName("Mostafa");
         boss.setFamily("Farhadi");

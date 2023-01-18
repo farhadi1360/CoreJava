@@ -10,8 +10,13 @@ public class CreditCard {
     public CreditCard(double balance) {
         this.balance = balance;
     }
-    public synchronized void changeBySyncImplementation() {
 
+
+    public  void changeBySyncImplementation() {
+//            taask1()
+//            taask2()
+//            taask3()
+//            taask4()
         for (int i = 0; i < 3; i++) {
             balance = balance + 1;
             try { Thread.sleep(100); } catch(InterruptedException e) { e.printStackTrace(); }
@@ -20,7 +25,10 @@ public class CreditCard {
     }
 
     public  void changeByLocking() {
-
+//        taask1()
+//            taask2()
+//            taask3()
+//            taask4()
         lock.lock();
         try {
             for (int i = 0; i < 3; i++) {

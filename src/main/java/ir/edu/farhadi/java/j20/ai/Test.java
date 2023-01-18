@@ -23,6 +23,9 @@ public class Test {
 
             System.out.println("Face Detection Processor  notifies all...");
             synchronized(q) { q.notifyAll(); }
+
+
+
         
     }
 

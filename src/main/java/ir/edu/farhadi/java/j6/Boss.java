@@ -13,18 +13,17 @@ public class Boss extends Personnel {
     public Boss(){
         System.out.println("Constructor Of Boss was called   ");
     }
-    public Boss(int salary) {
-        super("007");
-        this.salary = salary;
-        System.out.println("Constructor Of Boss was called with these parameters  "+salary);
-    }
-
     public int getSalary() {
         return salary;
     }
 
     public void setSalary(int salary) {
-        this.salary = salary;
+        if (salary!=0 && salary>0){
+            this.salary = salary;
+        }else {
+            System.out.println("your input salary is not set ");
+        }
+
     }
 
     public int getRange() {
