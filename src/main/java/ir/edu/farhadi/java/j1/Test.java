@@ -9,6 +9,8 @@ package ir.edu.farhadi.java.j1;
 public class Test {
 
 
+    int perspolise = 50;
+
 	/*
 	   these space define for all fields of class
 	   Fields are allocated in Heap (as object)
@@ -18,13 +20,21 @@ public class Test {
 	 */
 
     public static void main(String[] args) {
-        Test test = new Test();
-        test.met2();
 
-        //Autoboxing
-        Integer a = 10;
-        //unbox
-        int k = a;
+        Test test = new Test();
+        test.testPerspolise();
+//        test.met2();
+//
+//        //Autoboxing
+//        Integer a = 10;
+//        //unbox
+//        int k = a;
+
+    }
+    public void testPerspolise(){
+        int perspolise = 10;
+        System.out.println("Call is Stack frame"+perspolise);
+        System.out.println("Call is Heap "+this.perspolise);
 
     }
 
@@ -42,5 +52,4 @@ public class Test {
     public void met3(int number) {
         System.out.println(number);
     }
-
 }
