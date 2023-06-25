@@ -5,7 +5,7 @@ import java.lang.annotation.Annotation;
 public class Test {
 
     public static void main(String[] args) {
-        printClassInfo(TCPProtocol.class);
+//        printClassInfo(TCPProtocol.class);
          }
 
          private static void printClassInfo(Class c) {
