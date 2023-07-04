@@ -8,8 +8,6 @@ public class Student {
     String name;
     int age;
     long avg;
-    StudentBean studentBean = new StudentBean();
-    // point ss - 10q = 1050q
 
     void takeClass() {
 

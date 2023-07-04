@@ -19,6 +19,7 @@ public class SampleFinalAndStatic {
         SYSTEM_CODE = 100;
     }
 
+
     /*
      * we can not use this way because its possible we have not an object
      * {
@@ -27,6 +28,10 @@ public class SampleFinalAndStatic {
      * }
      * and also we can not use constructor because its possible we have not an object
      */
+
+//    {
+//        SYSTEM_CODE = 14;
+//    }
 //    SampleFinalAndStatic() {
 //        SYSTEM_CODE = 14;
 //    }

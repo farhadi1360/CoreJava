@@ -12,8 +12,9 @@ public class Test {
     public static void main(String[] args) {
 
 //        step1();
-          step2();
-//        step4();
+//          step2();
+//          step3();
+        step4();
 //        step6();
     }
 
@@ -82,12 +83,11 @@ public class Test {
 
     private static void step4() {
         Boss boss = new Boss();
-        Personnel personnel = boss;
-        Human human = boss;
-
-
-        human.setName("Mostafa");
         boss.setRange(10);
+        Personnel personnel = boss;
+        personnel.setPersonnelCode("0071860");
+        Human human = boss;
+        human.setName("Mostafa");
         logAllBossRanges(personnel);
     }
 
@@ -96,9 +96,15 @@ public class Test {
         Boss boss = (Boss) obj;
         Personnel personnel = (Personnel) obj;
         Human human = (Human) obj;
+        StringBuilder result = new StringBuilder();
+        result.append("The Name of My boss is ")
+                .append(boss.getName())
+                .append("  The Personnel Code of My Boss is ")
+                .append(boss.getPersonnelCode())
+                .append("  The Range of My boss is ")
+                .append(boss.getRange());
 
-        boss.setRange(10);
-        System.out.println(boss.getRange());
+        System.out.println(result.toString());
     }
 
     private static void step6() {

@@ -14,24 +14,24 @@ public class Test {
 
     /*
      * as you can see we can not use static in LocalVariable
-     * because we know all of the method in java has stack frame so the lifecycle of that  LocalVariable
+     * because we know all  the method in java has stack frame so the lifecycle of that  LocalVariable
      * is limited to end of method so that lead to static LocalVariable can not keep the value after end of method
      */
-//    private  void method1() {
+//    private   void method1() {
 //     static int a;
 //    }
 
     /*
-        as you know all of the methods that needs to heap space which called instance methods
+        as you know all the methods that needs to heap space which called instance methods
         so these are need to object of class for use.
         on the other hand we can have a methods or fields that no need to heap space .so that leads to you
-        dont need to new keyword for create objects
+        don't need to new keyword for create objects
 
         *********************STATIC******************
         if we have a static filed that is only take a place in memory for all objects
-        to mack it clear i should say we dont required to create even one object .
+        to mack it clears I should say we don't require to create even one object .
 
-        in fact  all of the static methods or fields are stored in the PermGen section of the heap
+        in fact  all the static methods or fields are stored in the PermGen section of the heap
         an important note is that only the variables and their technical values (primitives or references) are stored in  in Metaspace space of native heap
         and actual objects are stored in normal heap space
         like this
@@ -47,7 +47,7 @@ public class Test {
         SampleStatic sampleStatic1 = new SampleStatic();
         SampleStatic sampleStatic2 = new SampleStatic();
         SampleStatic sampleStatic3 = new SampleStatic();
-        // i tried created 3 objects just for described how changes  static field on all objects
+        // I tried created 3 objects just for described how changes  static field on all objects
 
         System.out.println(sampleStatic1.a);
         System.out.println(sampleStatic2.a);
