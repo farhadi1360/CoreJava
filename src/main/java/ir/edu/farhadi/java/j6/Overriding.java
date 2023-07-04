@@ -10,6 +10,7 @@ public class Overriding extends Boss{
     public static void main(String[] args) {
         Overriding overriding = new Overriding();
         overriding.doSomeThings();
+        overriding.test2();
     }
 
     /**
@@ -22,4 +23,12 @@ public class Overriding extends Boss{
     protected void doSomeThings(){
         System.out.println("Overriding doSomeThings");
     }
+
+//    @Override
+//    public void test2() {
+////        super.test2();
+//        System.out.println("asdasd");
+//    }
+
+
 }
