@@ -12,6 +12,7 @@ public class PriorityExecutiveInJava {
     final static int fs;
 
     {
+//        fs = 15;
         System.out.println("Run 1 Init Block Per Object Creation");
     }
 
@@ -21,7 +22,7 @@ public class PriorityExecutiveInJava {
     }
 
     public PriorityExecutiveInJava() {
-
+//        fs = 15;
         System.out.println("Run Constructor  per Object Creation");
     }
 

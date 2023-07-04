@@ -19,7 +19,7 @@ public class Test {
         encapsulation.writeNAme("Mostafa");
 //        encapsulation.age = -40; // try to invalid state
 //        encapsulation.writeAge(-40);
-//        encapsulation.writeAge(40);
+        encapsulation.writeAge(40);
 
         encapsulation.takeClass();
     }
