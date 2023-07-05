@@ -36,7 +36,8 @@ public class Human {
     }
 
 
-    public void save(){
+    public void
+    save(){
         System.out.println("Save Method is master method that put in superclass");
     }
 }
