@@ -11,10 +11,10 @@ import java.util.Arrays;
 public class Test {
     public static void main(String[] args) {
 
-//        step1();
+        step1();
 //          step2();
 //          step3();
-        step4();
+//        step4();
 //        step6();
     }
 
@@ -39,8 +39,11 @@ public class Test {
         Personnel personnel = boss;
         Human human = boss;
 
+
+
         Human bigHuman = new Human();
         Boss boss1 = (Boss) bigHuman;
+
          /*
            we can create boss view
           */

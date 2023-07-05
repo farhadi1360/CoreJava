@@ -13,6 +13,9 @@ public class Boss extends Personnel {
     public Boss(){
         System.out.println("Constructor Of Boss was called   ");
     }
+    public Boss(int range){
+        this.range = range;
+    }
     public int getSalary() {
         return salary;
     }

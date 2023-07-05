@@ -7,6 +7,13 @@ package ir.edu.farhadi.java.j6;
  */
 public class Overriding extends Boss{
 
+    public Overriding() {
+    }
+
+    public Overriding(int range) {
+        super(range);
+    }
+
     public static void main(String[] args) {
         Overriding overriding = new Overriding();
         overriding.doSomeThings();
@@ -24,11 +31,13 @@ public class Overriding extends Boss{
         System.out.println("Overriding doSomeThings");
     }
 
-//    @Override
-//    public void test2() {
-////        super.test2();
-//        System.out.println("asdasd");
-//    }
+    @Override
+    public void test2() {
+
+        super.test2();
+
+        System.out.println("asdasd");
+    }
 
 
 }
