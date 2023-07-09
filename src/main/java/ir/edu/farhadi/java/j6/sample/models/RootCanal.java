@@ -11,9 +11,14 @@ public final class RootCanal extends DentalDiskette{
     }
 
     @Override
-    public final void calculateInsurance() {
+    public  void calculateInsurance() {
         float insuranceRate = 0.15f;
         setPrice((long) (getPrice() * insuranceRate));
-        System.out.println("Calculate Insurance For RootCanal is "+getPrice());
+        StringBuilder result = new StringBuilder();
+        result.append("insuranceRate for RootChanel is : ")
+                .append(insuranceRate)
+                .append(" And Calculate Insurance For RootCanal is : ")
+                .append(getPrice());
+        System.out.println(result);
     }
 }

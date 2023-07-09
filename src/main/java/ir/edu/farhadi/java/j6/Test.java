@@ -14,8 +14,8 @@ public class Test {
 //        step1();
 //          step2();
 //          step3();
-//        step4();
-        step6();
+        step4();
+//        step6();
     }
 
 
@@ -100,9 +100,9 @@ public class Test {
         Human human = (Human) obj;
         StringBuilder result = new StringBuilder();
         result.append("The Name of My boss is ")
-                .append(boss.getName())
+                .append(human.getName())
                 .append("  The Personnel Code of My Boss is ")
-                .append(boss.getPersonnelCode())
+                .append(personnel.getPersonnelCode())
                 .append("  The Range of My boss is ")
                 .append(boss.getRange());
 

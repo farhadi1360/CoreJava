@@ -17,12 +17,11 @@ public class Test {
     public static void main(String[] args) {
         Diskette disketteOne = new DentalSurgery("DentalSurgery", 10500);
         Diskette disketteTwo = new RootCanal("RootCanal", 5000);
+
         DentalDiskette dentalSurgery = new DentalSurgery("DentalSurgery", 7800);
         DentalDiskette rootCanal = new RootCanal("RootCanal", 89000);
+
         DentalDiskette[] dentalDisketteList = {dentalSurgery, rootCanal};
-        DisketteService disketteService = new DisketteService();
-
-
         for (DentalDiskette dentalDiskette : dentalDisketteList) {
             dentalDiskette.calculateInsurance();
         }
@@ -31,6 +30,8 @@ public class Test {
         /**
          * i try to show how can we use reference address in reusable code by service layer
          */
+        DisketteService disketteService = new DisketteService();
+
         disketteService.calculateSumPriceBetweenTwoDiskette(disketteOne,disketteTwo);
 
 

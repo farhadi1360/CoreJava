@@ -16,5 +16,11 @@ public final class DentalSurgery extends DentalDiskette {
         float insuranceRate = 0.4f;
         setPrice((long) (getPrice() * insuranceRate));
         System.out.println("Calculate Insurance For DentalSurgery is "+getPrice());
+        StringBuilder result = new StringBuilder();
+        result.append("insuranceRate for DentalSurgery is : ")
+                .append(insuranceRate)
+                .append(" And Calculate Insurance For DentalSurgery is : ")
+                .append(getPrice());
+        System.out.println(result);
     }
 }
