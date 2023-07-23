@@ -15,8 +15,9 @@ public class TestSort {
 
         };
         oldWay(students);
+
         for (Student student : students) {
-            System.out.println(student.getName());
+            System.out.println(student.getName().concat("  ").concat(Integer.toString(student.getCode())));
         }
 
     }
@@ -33,4 +34,6 @@ public class TestSort {
 
 
     }
+
+
 }

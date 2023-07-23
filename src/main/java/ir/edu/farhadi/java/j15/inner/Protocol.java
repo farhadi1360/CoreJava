@@ -17,11 +17,6 @@ public class Protocol extends Device /*Inheritance */{
     private Handler handler;
 
 
-    public static class checkVideo{
-
-    }
-
-
     public Protocol(String name) {
         this.name = name;
         System.out.println("call constructor of Protocol ");
@@ -31,6 +26,8 @@ public class Protocol extends Device /*Inheritance */{
 
     /*  inclusion */
     public class Handler extends Device{
+
+        private String encryption="SHA256";
         public Handler() {
             System.out.println("call constructor of Handler ");
             setType("Handler Type");
@@ -39,7 +36,7 @@ public class Protocol extends Device /*Inheritance */{
         SecurityCheck securityCheck = new SecurityCheck();
         public void doHandle(){
             if(securityCheck.isSecure()){
-                System.out.println("the "+Protocol.this.name+" has secured");
+                System.out.println("the " + Protocol.this.name + " has secured" + " with " + Handler.this.encryption + " Algorithm");
             }
         }
 

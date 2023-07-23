@@ -22,12 +22,12 @@ public class SampleAnonymousAsReference {
         };
         AnonymousAsReference(students, reference);
         for (Student student : students) {
-            System.out.println(student.getName());
+            System.out.println(student.getName().concat("  ").concat(Integer.toString(student.getCode())));
         }
     }
 
     private static void AnonymousAsReference(Student[] students,Comparator<Student> reference ) {
-        Arrays.sort(students, reference);
+        Arrays.sort(students, reference); // you can use the reversed method for descending
     }
 
 }

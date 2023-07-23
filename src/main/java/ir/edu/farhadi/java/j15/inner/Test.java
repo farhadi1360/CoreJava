@@ -11,15 +11,15 @@ public class Test {
 
 
         Protocol.Handler protocolHandler = protocol.new Handler();
-
-
+//
+//
         System.out.println(protocolHandler.getType());
-
-
-
+//
+//
+//
         protocolHandler.doHandle();
-
-        Protocol.Log.doLog();
+//
+//        Protocol.Log.doLog();
     }
 
 

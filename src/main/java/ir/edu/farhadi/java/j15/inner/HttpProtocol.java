@@ -8,4 +8,6 @@ public class HttpProtocol extends Protocol{
     public void m1(String str) {
         this.title = "";
     }
+
+
 }
