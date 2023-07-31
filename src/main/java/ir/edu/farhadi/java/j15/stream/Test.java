@@ -72,6 +72,12 @@ public class Test {
         System.out.println("****************After Filtering **************");
         filteredStudent.forEach(System.out::println);
     }
+
+    public static void test6(){
+        Stream<Integer> numberStream = Stream.of(10, 50, 8);
+        Integer[] numberArray = numberStream.toArray(Integer[]::new);
+
+    }
     private static void testOptional(){
         Optional<Student> student = getStudent();
     }
@@ -81,7 +87,7 @@ public class Test {
         return Optional.of(students);
     }
 
-    public static void  test6(){
+    public static void  test7(){
             Set<String> authorities = Arrays.asList("Admin", "User", "PowerUser").stream().collect(Collectors.toSet());
         List<GrantedAuthority> ga = authorities.stream()
                 .map(SimpleGrantedAuthority::new)

@@ -4,6 +4,7 @@ public class PersonEntity {
     private String firstName;
     private String laseName;
 
+    public PersonEntity(){}
     public PersonEntity(String firstName, String laseName) {
         this.firstName = firstName;
         this.laseName = laseName;
@@ -23,5 +24,13 @@ public class PersonEntity {
 
     public void setLaseName(String laseName) {
         this.laseName = laseName;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonEntity{" +
+                "firstName='" + firstName + '\'' +
+                ", laseName='" + laseName + '\'' +
+                '}';
     }
 }
