@@ -36,7 +36,7 @@ public class Protocol extends Device /*Inheritance */{
         SecurityCheck securityCheck = new SecurityCheck();
         public void doHandle(){
             if(securityCheck.isSecure()){
-                System.out.println("the " + Protocol.this.name + " has secured" + " with " + Handler.this.encryption + " Algorithm");
+                System.out.println("the " + Protocol.this.name + " has secured" + " with " + this.encryption + " Algorithm");
             }
         }
 

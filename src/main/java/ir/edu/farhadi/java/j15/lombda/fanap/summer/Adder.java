@@ -4,8 +4,25 @@ public class Adder {
 
     public static void main(String[] args) {
 
-        Calculation calculation = (a, b) -> a + b;
-        printResult(calculation);
+        Calculation adder = new Calculation() {
+            @Override
+            public int calculate(int a, int b) {
+                return a+b;
+            }
+        };
+
+        Calculation multi = new Calculation() {
+            @Override
+            public int calculate(int a, int b) {
+                return a*b;
+            }
+        };
+
+
+//        Calculation adder = (a, b) -> a + b;
+//        Calculation multipile = (a, b) -> a * b;
+//        printResult(adder);
+//        printResult(multipile);
 
     }
 

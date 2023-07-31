@@ -9,5 +9,8 @@ public class Configuration {
     protected class DatabaseConfig{
 
     }
+    public static class Logger{
+
+    }
 
 }

@@ -11,7 +11,7 @@ public class SampleAnonymousAsField {
         }
     };
 
-    public static void main(String[] args) {
+      public static void main(String[] args) {
         SampleAnonymousAsField sampleAnonymousAsField = new SampleAnonymousAsField();
         sampleAnonymousAsField.sample();
 
@@ -37,7 +37,7 @@ public class SampleAnonymousAsField {
 
 
         for (Student student : students) {
-            System.out.println(student.getName());
+            System.out.println(student.getName() .concat("   ".concat(Integer.toString(student.getCode()))));
         }
     }
 
